@@ -1,0 +1,16 @@
+version: "3.3"
+
+services:
+    wechat-box:
+        image: "chisbread/wechat-box:latest"
+        restart: unless-stopped
+        container_name: "wechat-box"
+        environment:
+            WC_AUTO_RESTART: "yes"
+        ports:
+            - "8080:8080"
+        volumes:
+            - "/home/bread/.wechat/WeChat Files/:/home/app/WeChat Files/"
+            - "/home/bread/.wechat/Applcation Data/:/home/app/.wine/drive_c/users/user/Application Data/"
+            - "/home/bread/external:/home/app/external"
+        tty: true
