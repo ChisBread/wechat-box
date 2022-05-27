@@ -8,5 +8,5 @@
 - open 'http://your-ip:8080/vnc.html'
 
 # Build
-- 1. Download WeChatSetup-v3.3.0.115.exe to ./root/WeChatSetup-v3.3.0.115.exe
-- 2. docker build -t xxxx .
+1. Download WeChatSetup-v3.3.0.115.exe to ./root/WeChatSetup-v3.3.0.115.exe
+2. docker build -t xxxx .
