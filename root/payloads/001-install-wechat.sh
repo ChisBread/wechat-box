@@ -26,3 +26,4 @@ function install() {
 wine /WeChatSetup-v3.3.0.115.exe &
 install
 wait
+sleep 15
