@@ -8,7 +8,7 @@ function errmonitor() {
             NAME=`xdotool getwindowname $i`
             echo "window name: $NAME"
             if [ "$NAME" == "" ] || [ "$NAME" == "微信电脑版更新" ]; then
-                xdotool windowclose $i
+                xdotool windowunmap $i
             fi
         done
         for i in `xdotool search --onlyvisible --class wine`
