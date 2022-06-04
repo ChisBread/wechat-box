@@ -1,11 +1,28 @@
 #!/usr/bin/env bash
+## https://gitlab.com/cunidev/gestures/-/wikis/xdotool-list-of-key-codes
 function install() {
     while :
     do
         xdotool search '微信安装向导'
         NOTFOUND=$?
         if [ "$NOTFOUND" == "0" ]; then
-            sleep 16
+            sleep 20
+            xdotool key Tab
+            sleep 0.5
+            xdotool key Tab
+            sleep 0.5
+            xdotool key Tab
+            sleep 0.5
+            xdotool key space
+            sleep 0.5
+            xdotool key Tab
+            sleep 0.5
+            xdotool key Tab
+            sleep 0.5
+            xdotool key Tab
+            sleep 0.5
+            xdotool key Tab
+            sleep 0.5
             xdotool key Tab
             sleep 0.5
             xdotool key Tab
@@ -23,7 +40,7 @@ function install() {
     done
 }
 
-wine /WeChatSetup-v3.3.0.115.exe &
+wine /WeChatSetup-v3.6.0.18.exe &
 install
 wait
 sleep 15
