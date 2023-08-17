@@ -6,7 +6,7 @@ function install() {
         xdotool search '微信安装向导'
         NOTFOUND=$?
         if [ "$NOTFOUND" == "0" ]; then
-            sleep 20
+            sleep 60
             xdotool key Tab
             sleep 0.5
             xdotool key Tab
@@ -28,7 +28,7 @@ function install() {
             xdotool key Tab
             sleep 0.5
             xdotool key Return
-            sleep 16
+            sleep 30
             xdotool key Tab
             sleep 0.5
             xdotool key Tab
@@ -40,7 +40,8 @@ function install() {
     done
 }
 
-wine /WeChatSetup-v3.6.0.18.exe &
+wine /WeChatSetup-v3.9.2.23.exe &
 install
+
 wait
 sleep 15

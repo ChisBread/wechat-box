@@ -12,4 +12,4 @@
 
 # Build
 1. Download WeChatSetup-\*.exe to ./root/WeChatSetup-\*.exe
-2. docker build -t chisbread/wechat-box .
+2. docker build -t xxxx/wechat-box .
